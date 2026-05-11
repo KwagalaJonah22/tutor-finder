@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorConnect | Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-chalkboard-user"></i>
+                <h2>Tutor<span>Connect</span></h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="tutors.html"><i class="fas fa-users"></i> Find Tutors</a></li>
+                <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contact-header">
+            <h1><i class="fas fa-headset"></i> Get In Touch</h1>
+            <p>Have questions? We're here to help!</p>
+        </section>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3><i class="fas fa-address-card"></i> Contact Information</h3>
+                <div class="info-item"><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</div>
+                <div class="info-item"><i class="fas fa-phone-alt"></i> +256 123 456 789</div>
+                <div class="info-item"><i class="fas fa-envelope"></i> support@tutorconnect.ug</div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <h3><i class="fas fa-paper-plane"></i> Send Us a Message</h3>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Your Name" id="name" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Your Email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-tag"></i>
+                    <select id="subject" required>
+                        <option value="">Select Subject</option>
+                        <option>Looking for a Tutor</option>
+                        <option>Become a Tutor</option>
+                        <option>General Inquiry</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-comment"></i>
+                    <textarea placeholder="Your Message" id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+                <p id="formMessage" class="form-message"></p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><i class="far fa-copyright"></i> 2026 TutorConnect. All rights reserved.</p>
+            <p>Cavendish University Uganda - Examination 2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
